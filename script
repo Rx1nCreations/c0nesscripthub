@@ -33,6 +33,30 @@ local MainWindow = Rayfield:CreateWindow({
  -- buttons
 
  local Button = PlayerTab:CreateButton({
+    Name = "Noclip | E",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+        noclip = false
+        game:GetService('RunService').Stepped:connect(function()
+        if noclip then
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        end
+        end)
+        plr = game.Players.LocalPlayer
+        mouse = plr:GetMouse()
+        mouse.KeyDown:connect(function(key)
+        
+        if key == "e" then
+        noclip = not noclip
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        end
+        end)
+        print('Loaded')
+        print('Press "E" to noclip')
+    end,
+ })
+
+ local Button = PlayerTab:CreateButton({
     Name = "Inf Jump",
     Callback = function()
         --Toggles the infinite jump between on or off on every script run
