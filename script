@@ -30,7 +30,65 @@ local MainWindow = Rayfield:CreateWindow({
 
  local PlayerTab = MainWindow:CreateTab("Local Player", 4483362458) -- Title, Image
 
+ local ScriptTab = MainWindow:CreateTab("Scripts", 4483362458) -- Title, Image
+
  -- buttons
+
+ local Button = ScriptTab:CreateButton({
+    Name = "Infinite Yeild",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Infinite-Yeild-4388"))()
+    end,
+ })
+
+
+ local Button = PlayerTab:CreateButton({
+    Name = "btools",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Real-btools-script-11320"))()
+    end,
+ })
+
+ local Button = PlayerTab:CreateButton({
+    Name = "F3X",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-F3x-script-9549"))()
+    end,
+ })
+
+ local Button = ScriptTab:CreateButton({
+    Name = "Universal FE Script Hub",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Universal-FE-Script-Hub-9487"))()
+    end,
+ })
+
+ local Button = ScriptTab:CreateButton({
+    Name = "DomainX",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    end,
+ })
+
+ local Button = ScriptTab:CreateButton({
+    Name = "Darkhub key bypass",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-darkhub-key-bypass-10005"))()
+    end,
+ })
+
+ local Button = ScriptTab:CreateButton({
+    Name = "Chat Bypasser",
+    Callback = function()
+    -- The function that takes place when the button is pressed
+    loadstring(game:HttpGet('https://scripts.luawl.com/hosted/4694/19918/VadriftsV2[ChatBypasser].lua'))()
+    end,
+ })
 
  local Button = PlayerTab:CreateButton({
     Name = "Noclip",
