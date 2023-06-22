@@ -86,7 +86,7 @@ local MainWindow = Rayfield:CreateWindow({
     Name = "Chat Bypasser",
     Callback = function()
     -- The function that takes place when the button is pressed
-    loadstring(game:HttpGet('https://scripts.luawl.com/hosted/4694/19918/VadriftsV2[ChatBypasser].lua'))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/vqmpjay/chatbypasser/main/chatbypasserv1'),true))()
     end,
  })
 
